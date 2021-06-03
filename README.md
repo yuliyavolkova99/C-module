@@ -1,2 +1,5 @@
-# C-module
-![alt text](https://sun9-29.userapi.com/impg/A9ZpSAPh-defr0PSMVl-VFbMMh5C8AV2OS0nxw/vSKJh04vsjk.jpg?size=718x230&quality=96&sign=5f26eaaf29d9321a47089d79b7ff0ed8&type=album)
+
+![alt text](https://sun9-58.userapi.com/impg/6ClzdLjoZbkHyqRhBxkHmyIkLXyQiUpVxQrqUA/UXONW81DT6E.jpg?size=673x212&quality=96&sign=c809a8e07506961d9fd0c4bf7a06ab29&type=album)
+
+#The main purpose:
+A simple and convenient module for quick sorting of lists using one of the presented sorting methods.
