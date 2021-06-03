@@ -48,7 +48,7 @@ sortP.insertionsort([100,34,56])
 sortP.choicesort([100,34,56])
 sortP.shellsort([100,34,56])
 ```
-#№ Authors:
+## Authors:
 
 #### Yuliya Volkova | ysdv99@gmail.com
 #### Artem Smirnov | nice.artem123@list.ru
