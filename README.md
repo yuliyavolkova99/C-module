@@ -31,7 +31,7 @@
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/d/d8/Sorting_shellsort_anim.gif)
 
-#№ How to use it?
+## How to use it?
 
 #### Install all files then simply open CMD and write consistently
 ```
