@@ -30,3 +30,21 @@
 ###### Sorting algorithm, which is an improved insertion sorting algorithm. The idea of the Schell method is to compare elements that are not only next to each other, but also at a specified distance from each other.
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/d/d8/Sorting_shellsort_anim.gif)
+
+# How to use it?
+
+###### Install all files then simply open CMD and write consistently
+```
+python setup.py build
+
+python setup.py install
+
+python
+
+import sortP
+
+sortP.bubblesort([100,34,56])
+sortP.insertionsort([100,34,56])
+sortP.choicesort([100,34,56])
+sortP.shellsort([100,34,56])
+```
