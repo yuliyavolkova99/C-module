@@ -68,39 +68,6 @@ static PyObject *insertionsort(PyObject *self, PyObject *args){
     free(mass);
 }
 
-static PyObject *choicesort(PyObject *self, PyObject *args){
-    PyObject* list;
-    int minPosition, i, N, j;
-    double res;
-    double  tmp;
-    if (!PyArg_ParseTuple(args, "O", &list)){
-        return NULL;
-    }
-	N = PyList_GET_SIZE(list);
-    double *mass = (double**)malloc(N * sizeof(double*));
-    for (i=0; i<N; i++){
-        PyObject* item = PySequence_Fast_GET_ITEM(list, i);
-	    res = PyFloat_AsDouble(item);
-	    mass[i] = res;
-    }
-    for (int i = 0; i < N; i++){
-        minPosition = i;
-        for (int j = i + 1; j < N; j++) {
-            if (mass[minPosition] > mass[j]) {
-                minPosition = j;
-            }
-        tmp = mass[minPosition];
-        mass[minPosition] = mass[i];
-        mass[i] = tmp;
-        }
-    }
-    PyObject *my_list = PyList_New(N);
-    for (i=0; i<N; i++)
-    PyList_SetItem(my_list, i,  PyFloat_FromDouble(mass[i]));
-    return my_list;
-    free(mass);
-}
-
 static PyObject *shellsort(PyObject *self, PyObject *args){
     PyObject* list;
     int i, j, N, step;
@@ -142,12 +109,6 @@ static PyMethodDef ownmod_methods[] = {
 	shellsort,
 	 METH_VARARGS,
 	"shellsort"
-    },
-    {
-	"choicesort",
-	choicesort,
-	 METH_VARARGS,
-	"choicesort"
     },
     {
 	"bubblesort",

@@ -2,7 +2,7 @@ from distutils.core import setup, Extension
 
 module1 = Extension(
 	'sortP', 
-	 sources = ['sortP21.c'] 
+	 sources = ['sortP.c'] 
 )
 
 setup(
